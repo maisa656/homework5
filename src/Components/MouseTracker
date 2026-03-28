@@ -1,0 +1,23 @@
+import { useEffect, useState } from "react";
+
+export default function MouseTracker() {
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMove = (e) => {
+      setPos({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMove);
+    };
+  }, []);
+
+  return (
+    <h2>
+      X: {pos.x} Y: {pos.y}
+    </h2>
+  );
+}
