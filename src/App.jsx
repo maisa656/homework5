@@ -1,6 +1,7 @@
-import HiddenWord from "./components/HiddenWord";
-import Timer from "./components/Timer";
-import MouseTracker from "./components/MouseTracker";
+
+import HiddenWord from './Components/HiddenWord.jsx'
+import Timer from './Components/Timer.jsx'
+import MouseTracker from './Components/MouseTracker.jsx'
 
 function App() {
   return (
