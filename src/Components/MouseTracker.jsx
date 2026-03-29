@@ -16,8 +16,10 @@ export default function MouseTracker() {
   }, []);
 
   return (
-    <h2>
-      X: {pos.x} Y: {pos.y}
-    </h2>
+    <div>
+      <h2>
+        X: {pos.x} Y: {pos.y}
+      </h2>
+    </div>
   );
 }
